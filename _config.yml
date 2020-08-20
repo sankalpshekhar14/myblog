@@ -26,6 +26,7 @@ url: ""
 github_username: sankalpshekhar14
 # Build settings
 # theme: 
+mathjax: true
 kramdown:
   auto_ids: true
 plugins:
