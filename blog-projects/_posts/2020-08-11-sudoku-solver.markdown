@@ -2,7 +2,8 @@
 layout: post
 title:  "Sudoku Solver"
 date:   2020-08-11 
-category: projects
+category: Projects
+tags: Backtracking
 ---
 
 I created a program for solving sudoku. The algorithm uses backtracking to find the correct combination of numbers in the puzzle.

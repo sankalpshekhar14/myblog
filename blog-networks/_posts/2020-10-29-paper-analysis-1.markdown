@@ -3,6 +3,7 @@ layout: post
 title:  "Analysis of Paper: Toward Packet Routing with Fully-distributed Multi-agent Deep Reinforcement Learning"
 date:   2020-10-29 
 category: Networks
+tags: Packet-Routing, DeepRL, Q-learning
 ---
 ## Contents:
 * [Introduction](#introduction)

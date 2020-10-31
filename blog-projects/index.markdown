@@ -4,5 +4,5 @@
 
 layout: home-category
 title: Projects
-category: projects
+category: Projects
 ---
