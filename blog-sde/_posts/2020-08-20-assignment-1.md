@@ -2,7 +2,7 @@
 layout: post
 title:  "Assignment-1 - Experiencing Data in Heterogenous Systems"
 date:   2020-08-20 
-category: EDA
+category: SDE
 permalink: /:categories/assignment1
 ---
 ***

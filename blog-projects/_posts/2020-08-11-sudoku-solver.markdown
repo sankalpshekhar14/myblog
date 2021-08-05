@@ -3,7 +3,6 @@ layout: post
 title:  "Sudoku Solver"
 date:   2020-08-11 
 category: Projects
-tags: Backtracking
 ---
 
 I created a program for solving sudoku. The algorithm uses backtracking to find the correct combination of numbers in the puzzle.
@@ -15,7 +14,7 @@ A sudoku grid is a 9x9 matrix, with each box of 3x3 containing numbers from 1 to
 
 This is how an average sudoku grid looks like:
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1200px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png" width=300 height=300 title="A Sudoku Grid">
+<img src="https://cdn.britannica.com/q:60/25/188725-050-C3DE2288/Sudoku-puzzles.jpg" width=300 height=300 title="A Sudoku Grid">
 
 ## The Algorithm
 

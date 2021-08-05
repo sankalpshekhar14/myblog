@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home-category
-title: Data Architecture
-category: EDA
+title: Software Development
+category: SDE
 ---
