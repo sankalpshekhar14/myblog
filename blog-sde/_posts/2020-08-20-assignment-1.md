@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Assignment-1 - Experiencing Data in Heterogenous Systems"
+title:  "Assignment-1 - Experiencing Data in Heterogeneous Systems"
 date:   2020-08-20 
 category: SDE
 permalink: /:categories/assignment1

@@ -8,11 +8,24 @@ layout: default
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
+        &bull; {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+      {% assign wordCount = page.content | number_of_words %}
+
+      &bull;
+      {{ wordCount }} words
+      &nbsp;
+      {%- for tag in page.tags -%}
+        &bull; {{tag}} 
+        &nbsp; 
+        
+        {%- endfor -%}
+        
+        &bull;
+      </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
