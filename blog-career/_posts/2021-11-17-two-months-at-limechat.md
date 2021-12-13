@@ -2,11 +2,12 @@
 layout: post
 title:  "Two Months at LimeChat"
 date:   2021-11-17 
-category: SDE
+category: career
 tags:
 - LimeChat
 - Internship
 - D2C
+permalink: /:title
 ---
 <img src="https://ik.imagekit.io/m52sq26n4h/limechat/wp-content/uploads/2021/04/limechat-logo.png">
 
@@ -20,4 +21,14 @@ Working at a startup comes with its own pros and cons. You tend to have a lot of
 
 I joined the bot team, which is responsible for building bots for various clients and improving the bot framework that we use to build these bots. Over the last two months I managed to build bots for 4 different clients from two different industries- **Pilgrim** and **Arata** from beauty and personal care, while **Coolberg** and **Ragecoffee**  were from food and beverages sector. I am not going to talk a lot about my work in this post. I want to focus more on the insights I gained while building these bots, and insights about the industry itself.
 
-D2C brands generally find a niche market and use social media and other marketing tools to sell their products to the target audience. Some of these brands are 100% online and have little to no presence in the brick and mortar stores, or other channels like Nykaa or Amazon. They mainly target their campaigns through social media ads, and try ways to route them to the website where they can complete the shopping process.
+D2C brands generally find a niche market and use social media and other marketing tools to sell their products to the target audience. Some of these brands are 100% online and have little to no presence in the brick and mortar stores, or other channels like Nykaa or Amazon. They mainly target their campaigns through social media ads, and try ways to route customers to the website where they can complete the shopping process.
+
+Here are some of the insights that I gained from building bots for D2C brands:
+
+## 1. Shopify Rules Them All
+<img src="https://1000logos.net/wp-content/uploads/2020/08/Shopify-Logo.png">
+
+More than 90% of the companies that I got a chance to work on, or explore in some capacity, had one thing in common; they all used **shopify** as their backend. Shopify is clearly the *#1* choice for D2C brands for building their website. Shopify websites are easy to set up and maintain. Entrepreneurs with no experience can get started and have fully functional pages up and running in no time. I saw an example of this in my personal life, where my cousin and her startup's co-founder set up a shopify website in 2 days (with no background in web development).
+
+The flexibility of shopify APIs and a massive community support also helps in keeping the popularity of the platform. It also leverages GraphQL, which is very useful and helps developers to build new integrations for new features.
+

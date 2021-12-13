@@ -2,7 +2,7 @@
 layout: post
 title:  "Sudoku Solver"
 date:   2020-08-11 
-category: Projects
+category: tech
 tags: 
 - Python
 - Backtracking 

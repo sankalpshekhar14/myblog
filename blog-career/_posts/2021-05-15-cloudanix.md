@@ -2,7 +2,7 @@
 layout: post
 title:  "Internship at Cloudanix"
 date:   2021-05-15 
-category: SDE
+category: career
 permalink: /:categories/cloudanix
 ---
 Today was my last day as an intern at Cloudanix. I cannot believe how quickly 4 months have passed by. This was my first proper internship, the first one in which I explored software development. It was great to learn, and I had the chance to work on a real-world problem, to design, implement and test solutions to it.
