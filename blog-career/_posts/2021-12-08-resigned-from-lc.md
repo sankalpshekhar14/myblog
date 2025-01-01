@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  I Resigned from Limechat Today
+title:  I Resigned from LimeChat Today
 date:   2021-12-08 
 category: career
 tags:

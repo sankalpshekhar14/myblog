@@ -33,6 +33,9 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-avatar
+  - jekyll-remote-theme
+  
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
 # Exclude from processing.
 # The following items will not be processed, by default.
