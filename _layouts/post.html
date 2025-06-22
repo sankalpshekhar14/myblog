@@ -15,8 +15,6 @@ layout: default
       {%- endif -%}
       {% assign wordCount = page.content | number_of_words %}
 
-      &bull;
-      {{ wordCount }} words
       &nbsp;
       {%- for tag in page.tags -%}
         &bull; {{tag}} 
@@ -31,6 +29,7 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+  <img src="{{ page.not-by-ai }}" alt="Featured Image">
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

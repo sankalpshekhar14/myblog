@@ -1,19 +1,21 @@
 ---
 layout: post
-title:  "Sudoku Solver"
-date:   2020-08-11 
+title: "Sudoku Solver"
+date: 2020-08-11
 category: tech
-tags: 
-- Python
-- Backtracking 
+permalink: /:title
+not-by-ai: "assets/images/not-by-ai.png"
+tags:
+  - Python
+  - Backtracking
 ---
 
 I created a program for solving sudoku. The algorithm uses backtracking to find the correct combination of numbers in the puzzle.
 
 A sudoku grid is a 9x9 matrix, with each box of 3x3 containing numbers from 1 to 9. There are two simple rules:
 
-* No number in each columm or row should be repeated.
-* Numbers in each 3x3 grid should not be repeated.
+- No number in each columm or row should be repeated.
+- Numbers in each 3x3 grid should not be repeated.
 
 This is how an average sudoku grid looks like:
 
@@ -24,14 +26,14 @@ This is how an average sudoku grid looks like:
 The goal is to fill all the unfilled boxes, by following the two rules. We use 9x9 nested lists, to represent the grid. The unfilled positions are initialised to zero.
 
 ```python
-grid = [ [3, 0, 6, 5, 0, 8, 4, 0, 0], 
-         [5, 2, 0, 0, 0, 0, 0, 0, 0], 
-         [0, 8, 7, 0, 0, 0, 0, 3, 1], 
-         [0, 0, 3, 0, 1, 0, 0, 8, 0], 
-         [9, 0, 0, 8, 6, 3, 0, 0, 5], 
-         [0, 5, 0, 0, 9, 0, 6, 0, 0], 
-         [1, 3, 0, 0, 0, 0, 2, 5, 0], 
-         [0, 0, 0, 0, 0, 0, 0, 7, 4], 
+grid = [ [3, 0, 6, 5, 0, 8, 4, 0, 0],
+         [5, 2, 0, 0, 0, 0, 0, 0, 0],
+         [0, 8, 7, 0, 0, 0, 0, 3, 1],
+         [0, 0, 3, 0, 1, 0, 0, 8, 0],
+         [9, 0, 0, 8, 6, 3, 0, 0, 5],
+         [0, 5, 0, 0, 9, 0, 6, 0, 0],
+         [1, 3, 0, 0, 0, 0, 2, 5, 0],
+         [0, 0, 0, 0, 0, 0, 0, 7, 4],
          [0, 0, 5, 2, 0, 6, 3, 0, 0],
 ]
 ```
@@ -40,7 +42,7 @@ The algorithm goes through all the blank positions. At the first blank position,
 
 ### The Code
 
-* **findEmpty()** function traverses the grid and returns the first blank space.
+- **findEmpty()** function traverses the grid and returns the first blank space.
 
 ```python
 def findEmpty(): 					#Finds an empty space
@@ -50,7 +52,7 @@ def findEmpty(): 					#Finds an empty space
 				return i,j
 ```
 
-* **checkPossibility(y,x,n)** takes the grid position(x,y) and number(n) as input, and checks if that number can be placed in that position.
+- **checkPossibility(y,x,n)** takes the grid position(x,y) and number(n) as input, and checks if that number can be placed in that position.
 
 ```python
 def checkPossibility(y,x,n):        #Checks if a given number can be filled in a given cell
@@ -67,10 +69,11 @@ def checkPossibility(y,x,n):        #Checks if a given number can be filled in a
 		for j in range(0,3):
 			if (grid[i+y0][j+x0] == n):
 				return False
-	
+
 	return True
 ```
-* **printBoard()** displays the grid in the correct format.
+
+- **printBoard()** displays the grid in the correct format.
 
 ```python
 def printBoard():    #Prints out the board
@@ -88,18 +91,19 @@ def printBoard():    #Prints out the board
 				print(str(grid[i][j])+ " ",end="")
 	print('---------------------')
 ```
-* **solveBoard()** is the recursive function that calls the above functions.
+
+- **solveBoard()** is the recursive function that calls the above functions.
 
 ```python
 def solveBoard():
 	global grid                   #Solves the given board
-	
+
 	find=findEmpty()
 	if not find:
 		return True
 	else:
 		y,x=find
-	
+
 	for k in range(1,10):
 		if(checkPossibility(y,x,k)):
 			grid[y][x]=k
@@ -107,7 +111,8 @@ def solveBoard():
 			if solveBoard():
 				return True
 			grid[y][x]=0
-		
+
 	return False
 ```
+
 More information on Backtracking can be found [here](https://en.wikipedia.org/wiki/Backtracking).
